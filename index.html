@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发刊词-世界是复杂的</title>
+    <style>
+        :root {
+            --primary-color: #212121;
+            --background-color: #FFFFFF;
+            --surface-color: #F5F5F5;
+            --text-color: #212121;
+            --secondary-text-color: #757575;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #FFFFFF;
+                --background-color: #212121;
+                --surface-color: #424242;
+                --text-color: #FFFFFF;
+                --secondary-text-color: #BDBDBD;
+            }
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            background-color: var(--background-color);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 800px;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            background: var(--surface-color);
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .content {
+            padding: 24px;
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                justify-content: flex-start;
+                padding-left: calc((100% - 65%) * 0.382);
+            }
+            .content-wrapper {
+                width: 65%;
+            }
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-track {
+            background: var(--surface-color);
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb {
+            background-color: var(--secondary-text-color);
+            border-radius: 4px;
+        }
+
+        .content-wrapper::-webkit-scrollbar-thumb:hover {
+            background-color: var(--text-color);
+        }
+
+        .close-button {
+            position: fixed;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--surface-color);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s ease;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        }
+
+        .close-button:hover {
+            background: var(--secondary-text-color);
+        }
+
+        .close-button::before,
+        .close-button::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: var(--text-color);
+            transform: rotate(45deg);
+        }
+
+        .close-button::after {
+            transform: rotate(-45deg);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 16px 0;
+            cursor: pointer; 
+        }
+
+        .image-error {
+            border: 1px solid #ff0000;
+            padding: 10px;
+            text-align: center;
+            color: #ff0000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="close-button" onclick="closeWebsite()"></button>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="content">
+                <h1>发刊词-世界是复杂的</h1>
+                <p></p>
+                <p>我们生活在一个复杂的世界中。这个世界并不是像童话故事哪般美好，也不是像地狱一样黑暗，这个世界是复杂的。人们并不是要么是好人，要么是坏人。绝对的白与绝对的黑只存在于抽象的定义之中，现实是一片五彩斑斓的灰。\n\n不仅如此，好人不一定会做好事，一些事情哪怕出发点是好的，结果也可能是坏的。坏人也不一定做坏事，一些事情哪怕出发点是坏的，结果也可能是好的。所以在对一个个人使用一个标签的时候，你一定要特别小心，因为你并不知道他的全部，而他的全部也不是一个标签就可以概括的。\n\n所以我们看待事件，至少是选择理性的看待的时候，不要分析一个人的动机。因为那是无意义的，那只是一种在不得已的情况下提升对罪犯的确认的准确度的手段。但是你面对的是一个个具体的，复杂的人，你又如何去分析他的动机？哪怕分析出，与事件的影响有什么关联？\n\n有很多人，他们被称为二极管，但其实有更多人也拥有着这样的简单的价值观。他忽略了巨大的真实，而选择使用简化的失真的玩乐的游戏。这无可厚非，因为这也是人的作为主导的情感的天然流露。要接受复杂的东西是痛苦的，是耗费能量的，在很长一段人类的历史上是不经济的。\n\n时过境迁，现代的人类的物质上的生活也越来越依赖起精神的素养，相应的，获得复杂的多面的信息的成本也随着信息时代的到来低到可以忽略不计。在这个时代，这样的简单的价值观就不再合适。而由于进化的时间性，变化的随机性，人的对接受复杂的信息的排斥还是主导着人脑。\n\n而为了应对这样的变化，我们也相应的应该更关注自己的世界观的构建，更关注我们的思维素养的提升。而要做到这点是不容易的。社会上很多人，甚至是政府，都在利用这一滞后性带来的个人的思考能力下降，通过扭曲事实谋求自己的利益（当然这一动机与这件事的影响无关联）。\n\n这就导致信息成本最低的互联网上出现了越来越多的垃圾信息。特别是简体中文的互联网，一些人们把那些在现实生活中养成的恶习带到了网上。他们不谈逻辑和观点，只谈论立场和主义；他们不讨论谬误和问题，却骂着粗俗的语言。而这也就成为了一些政权的网络工具，一些个人的谋利手段。\n\n而我们要做的就是这样一个期刊，它使用尽量客观理性的角度对事件进行分析，使用尽量多的视角对事件进行还原。我们不能抵达真相，但我们可以去逼近他。我们不会删除我们的文章，以供回溯我们的错误。我们也是[link:民主与多元化促进会](https://startpage-75o.pages.dev/)的加盟成员。\n\n这是一个美好的愿景，但愿我们可以实现它。</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function processLinks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>');
+        }
+
+        function processLineBreaks() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\\n/g, '<br>');
+        }
+
+        function processImages() {
+            const content = document.querySelector('.content');
+            content.innerHTML = content.innerHTML.replace(/\[image:\s*(.*?)\]/g, '<img src="$1" alt="Image">');
+        }
+
+        function closeWebsite() {
+            window.close();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            processLinks();
+            processLineBreaks();
+            processImages();
+        });
+    </script>
+</body>
+</html>
